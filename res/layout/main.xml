@@ -2,30 +2,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"    
+    android:weightSum="100">
 
-    <TextView
-        android:id="@+id/tvRak"
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="45dp" />
+        android:layout_height="312dp"
+        android:layout_weight="46.15"
+        android:orientation="vertical"
+        android:weightSum="20" >
 
-    <Button
-        android:id="@+id/bSuccess"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="25dp"
-        android:text="I completed it!" />
-    
-	<Button
-        android:id="@+id/bFail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="15dp"
-        android:text="pass" />
-"
+        <TextView
+	        android:id="@+id/tvRak"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:gravity="center"
+	        android:textSize="45dp" />
+    </LinearLayout>
 
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:weightSum="80" >
+	    
+	    <Button
+	        android:id="@+id/bSuccess"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="25dp"
+	        android:text="I completed it!" />
+	    
+		<Button
+	        android:id="@+id/bFail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:textSize="15dp"
+	        android:text="pass" />
+	</LinearLayout>    
+	
 </LinearLayout>
